@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Sign Up</title>
+  <title>Membership - Confirmation</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="secondary.css">
 </head>
 <body>
   <div class="container">
     <h1>Become a Member!</h1>
 
     <ul class="progress">
-      <li class="current">
+      <li>
         <a href="index.html">
           <div class="circle">1</div>
           <span>Account</span>
@@ -24,7 +25,7 @@
           <span>Details</span>
         </a>
       </li>
-      <li>
+      <li class="current">
         <a href="step3.html">
           <div class="circle">3</div>
           <span>Confirmation</span>
@@ -34,19 +35,17 @@
 
     <main>
       <div class="left-col">
-        <h2>Account Setup</h2>
+        <h2>Confirmation</h2>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" class="error-field" />
-        <p class="error">Sorry, this field is required</p>
-        
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" />
-        
-        <label for="email">Email Address</label>
-        <input type="text" id="email" />
+        <label for="tos" class="mt-extra">Terms of Service</label>
+        <textarea class="extra-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 
-        <a href="step2.html" class="cta">Next</a>
+        <input type="checkbox" name="cb" id="cb" />
+        <label for="cb" id="checkbox">
+          I agree to the Terms of Service
+        </label>
+
+        <a href="step3.html" class="cta">Complete Sign-Up</a>
       </div>
       <div class="right-col">
         <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
